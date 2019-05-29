@@ -30,11 +30,11 @@ public class BorrowerTest {
     @Test
     public void CanRentBook() {
         library.addBook(book1);
-        borrower.rentBook(book1);
+        borrower.rentBook(library, book1);
         assertEquals(1, borrower.countRentals());
         assertEquals(4, library.countBooks());
     }
 
 
     }
-}
+

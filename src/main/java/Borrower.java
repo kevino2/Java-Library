@@ -12,7 +12,7 @@ public class Borrower {
 
     public void rentBook(Library library, Book book) {
             library.addBook(book);
-            Book borrowedBook =library.removeFromCollection(book);
+            Book borrowedBook = library.removeFromCollection();
             this.rentedBooks.add(borrowedBook);
         }
 
